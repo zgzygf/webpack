@@ -1,0 +1,16 @@
+一，字体图标使用
+
+    1>	下载：
+        npm install file-loader -s(之前引入图片已经下载，这里可省略)
+    2> 配置 webpack.config.js
+    module:{
+        rules:[
+          {
+            test:/\.(woff|ttf|svg|eot|xttf|woff2)$/,
+            use:'file-loader?limit=1024&name=./fonts/[name].[ext]'
+          }
+        ]
+    }
+    //limit(字符限制) name(文件名)
+    test--webpack要打包的文件(webpack默认只识别js文件，打包其他的要安装对应的loader来编译)
+    use--要编译的loader

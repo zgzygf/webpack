@@ -1,0 +1,14 @@
+{
+  "name": "zgz",
+  "version": "1.0.0",
+  "description": "webpack打包js、im,css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack-cli": "^3.1.0"
+  }
+}

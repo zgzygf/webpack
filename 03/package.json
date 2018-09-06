@@ -1,0 +1,12 @@
+{
+  "name": "03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "dev": "webpack-dev-server --open --inline"  
+  },
+  "author": "",
+  "license": "ISC"
+}

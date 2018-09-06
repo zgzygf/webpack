@@ -1,0 +1,30 @@
+一,css提取
+
+插件：
+    1>>下载(安装)插件
+
+    npm install extract-text-webpack-plugin@next -s
+
+    2>>配置 webpack.config.js
+    const ExtractTextPlugin = require("extract-text-webpack-plugin");
+    {
+        test: /\.css$/,
+        use:ExtractTextPlugin.extract({
+          fallback:"style-loader",
+          use:[{
+             loader:'css-loader',
+             options:{
+               minimize:true
+               //css压缩
+             }
+          }],
+          publicPath:"../" (提取出来css路径)
+        })
+      }
+
+      plugins:[
+             new ExtractTextPlugin('./css/[name].css')
+             ]
+
+
+

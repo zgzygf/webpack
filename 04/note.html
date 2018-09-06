@@ -1,0 +1,28 @@
+一， loader  :  加载程序
+
+二,  loader的配置
+ 	1>> 引入css需要
+ 		style-loader
+ 		css-loader
+
+ 		下载:
+			 npm install style-loader css-loader -s
+		引入图片文件等file-loader(css里面引入图片文件，html里还不能引，html引图片还要下载其他插件)
+		下载：
+			npm install file-loader -s
+			 
+三,  webpack.config.js里面配置
+	 module:{
+		 rules:[
+		 	{
+				 test:/\.css$/,
+				 loader: 'style-loader!css-loader'
+			 },
+			 {
+				test:/\.(jpg|png|jpeg)$/,
+				use:['file-loader']
+			  }
+		 ]
+	 }
+
+	 //其他loader下载配置查资料。。。。本节课练习css,style,img三个

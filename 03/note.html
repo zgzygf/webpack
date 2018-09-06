@@ -1,0 +1,26 @@
+一,本地服务器(dev-server)
+
+
+安装:
+
+	npm install webpack-dev-server -s  
+
+
+	在package.json配置
+	"start": "webpack --mode development", //代码未压缩配置
+    "dev": "webpack-dev-server --open --inline"  //open 打开  inline代码实时刷新
+配置：
+	webpack.config.js:
+
+	  devServer:{
+	  	contentBase:'./public', //本地服务路径
+	  	inline:true,  //实时刷新
+	  	port:8081,  //默认8080
+	  	hot
+	}
+
+	package.json
+
+	"scripts":{
+		"dev":"webpack-dev-server --open --inline"
+	}

@@ -1,0 +1,1 @@
+console.log('今天webpack打包js/img/css等文件')
